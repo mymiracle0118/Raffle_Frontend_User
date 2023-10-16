@@ -1,0 +1,191 @@
+@font-face{
+	font-family : "IndustryBold";
+	src:  url("./Industry-Bold.ttf");
+}
+@font-face{
+	font-family : "IndustryBlack";
+	src:  url("./Industry-Black.ttf");
+}
+
+body{
+    // background-color: #f5f3f6;
+    background-color: black;
+    font-family: "IndustryBlack" !important;
+    text-align: center;
+    font-size : 14px;
+    overflow-x: hidden;
+}
+
+.logo-menu{
+    padding-right : 10px;
+    margin-top : 20px;
+    margin-bottom: 0;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .Mark{
+        img{
+            max-width: 100px;
+            width : 100%
+        }
+    }
+
+    .D3bay{
+        img{
+            max-width: 500px;
+            width : 100%
+        }
+    }
+
+    .TestImage{
+        img{
+            max-width: 100px;
+            width : 100%
+        }
+    }
+
+    // @media (max-width : 800px){
+    //     .D3bay{
+    //         display: none;
+    //     }
+    // }
+
+    // @media (max-width : 440px){
+    //     .TestImage{
+    //         display: none;
+    //     }
+    //     justify-content: center;
+    // }
+}
+
+.wallet-wrapper{
+    @media (max-width : 440px){
+        float : none;
+    }
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .content-item{
+        width : 350px;
+        margin : 20px;
+        text-align: center;
+
+        .card{
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #faebf7;
+            transition : box-shadow 0.5s, transform 0.5s;
+            box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    
+            &:hover{
+                transform: translate(0, -20px);
+                box-shadow: 0 16px 32px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+            }
+    
+            img{
+                border-radius: 16px;
+                height : 300px;
+            }
+    
+            .card-title{
+                padding : 20px;
+                font-size: 24px;
+            }
+    
+            .live-dot{
+                display: inline-block;
+                width: 10px;
+                height : 10px;
+                border-radius: 9999px;
+                background-color: rgb(69, 211, 69);
+            }
+    
+            .end-dot{
+                display: inline-block;
+                width: 10px;
+                height : 10px;
+                border-radius: 9999px;
+                background-color: rgb(50, 49, 49);
+            }
+    
+            .btn-detail{
+                width : 50%;
+                padding : 0 auto;
+                background-color: #cf9ec9;
+            }
+        }
+    }
+
+    .detail-panel{
+        padding : 30px;
+        .card{
+            padding : 20px;
+            border-radius: 8px;
+            background-color: #faebf7;
+            .sub-title{
+                font-size: 14px;
+            }
+            img{
+                border-radius: 8px;
+                height : 190px;
+                width : 190px;
+            }
+            .info{
+                text-align: left;
+            }
+
+            input {
+                text-align: center;
+            }
+            .setting-input::-webkit-inner-spin-button,
+		    .setting-input::-webkit-outer-spin-button{
+                -webkit-appearance: none;
+                margin : 0;
+            }
+            .setting-input[type="number"]{
+                -moz-appearance: textfield;
+            }
+            button{
+                background-color: #cf9ec9;
+                width : 100%
+            }
+        }
+    }
+
+    .result-panel{
+        img{
+            border-radius: 8px;
+            height : 190px;
+            width : 190px;
+        }
+        .title{
+            padding-top : 20px;
+            padding-bottom : 10px;
+            font-size: 24px;
+        }
+        .card{
+            background-color: #faebf7;
+        }
+        table{
+            th{
+                padding : 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.grayscale {
+    filter : grayscale(100%) !important;
+}
+
+a{
+    text-decoration: none;
+    color : black !important;
+}
